@@ -4,9 +4,12 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
-@Lazy //or @Scope("Prototype")
+@Lazy
+//@Lazy //or @Scope("Prototype")
 public class OrderService {
-    public OrderService() {
-        System.out.println("OrderService created");
+    PaymentService payment;
+    public OrderService(@Lazy PaymentService payment) {  //we pass dependency as proxy
+        this.payment=payment;
+        System.out.println("OrderService is created");
     }
 }

@@ -7,7 +7,6 @@ public class Main{
     static void main(String[] args) {
         ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
         OrderService order=context.getBean(OrderService.class);//we need to create it for bean creation in Lazy
-
     }
 }
 
