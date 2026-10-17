@@ -13,6 +13,6 @@ public class StudentService {
     }
 
     public Student createStudent(Student studentReq){
-
+            return new Student();
     }
 }
