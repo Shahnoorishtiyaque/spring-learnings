@@ -2,9 +2,8 @@ package com.example.CrudSpringBootDemo.service;
 
 import com.example.CrudSpringBootDemo.entity.Student;
 import com.example.CrudSpringBootDemo.repository.StudentRepository;
-import org.springframework.stereotype.Component;
-
-@Component
+import org.springframework.stereotype.Service;
+@Service
 public class StudentService {
     private StudentRepository studentRepository;
 
@@ -13,6 +12,9 @@ public class StudentService {
     }
 
     public Student createStudent(Student studentReq){
-            return new Student();
+        System.out.println("Inside Student Service");
+            Student studentResp=studentRepository.saveStudent(studentReq);
+        System.out.println("Exiting Student Service");
+            return studentResp;
     }
 }
