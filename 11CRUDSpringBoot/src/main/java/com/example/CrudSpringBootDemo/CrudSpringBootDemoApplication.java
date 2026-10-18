@@ -6,7 +6,7 @@ import org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration;
 
 import java.util.Scanner;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication/*(exclude = {DataSourceAutoConfiguration.class})*/
 public class CrudSpringBootDemoApplication {
 
 	public static void main(String[] args) {

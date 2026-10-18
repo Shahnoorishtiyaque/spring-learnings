@@ -51,6 +51,14 @@ public class Student {
         return subject;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getId() {
+        return id;
+    }
+
     public void setSubject(String subject) {
         this.subject = subject;
     }
