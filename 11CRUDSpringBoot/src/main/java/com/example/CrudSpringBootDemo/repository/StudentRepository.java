@@ -12,7 +12,7 @@ public class StudentRepository {
         s1.setName("Shaan");
         s1.setAge(22);
         s1.setEmail("shahnoorishtiyaque687@gmail.com");
-        s1.setRollNo(41);
+        s1.setRollNo(44);
         s1.setSubject("springBoot");
         return s1;
     }
