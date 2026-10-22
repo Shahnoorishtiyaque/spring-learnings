@@ -6,7 +6,7 @@ import jakarta.validation.constraints.Size;
 
 public class CreateStudentRequestDTO {
     @NotBlank(message = "Name cant be blank")
-    @Size(min = 2, max = 50,message = "at least 2 character is required")  //this will work when we override exception handling
+    @Size(min = 2, max = 50,message = "at least 2 character is required")  //this will work when we override exception handlinggit status
     private  String name;
     @Email//these will not work until we use @valid whenever we use this values
     private  String email;
