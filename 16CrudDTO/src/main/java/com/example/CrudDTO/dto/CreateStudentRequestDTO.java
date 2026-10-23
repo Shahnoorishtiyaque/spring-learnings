@@ -10,6 +10,7 @@ public class CreateStudentRequestDTO {
     private  String name;
     @Email//these will not work until we use @valid whenever we use this values
     private  String email;
+a
 
     public String getName() {
         return name;
