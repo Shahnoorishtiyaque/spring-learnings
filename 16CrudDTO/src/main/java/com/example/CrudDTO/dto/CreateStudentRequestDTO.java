@@ -10,7 +10,7 @@ public class CreateStudentRequestDTO {
     private  String name;
     @Email//these will not work until we use @valid whenever we use this values
     private  String email;
-a
+
 
     public String getName() {
         return name;
@@ -27,5 +27,5 @@ a
     public void setEmail(String email) {
         this.email = email;
     }
-    //we want only these fields rather than all the fields
+
 }
